@@ -1,0 +1,4 @@
+<map id="Jogo" name="Jogo">
+<area shape="rect" id="node2" href="$class_pacman.html" title="A Classe Pacman implementa a modelagem visual e física e as funcionalidades do pacman no jogo..." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node3" href="$class_menu.html" title="A classe Menu implementa a tela de inicial de controle do jogo. " alt="" coords="100,5,155,32"/>
+</map>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PAC-MAN: Legenda do Grafo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PAC-MAN
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Legenda do Grafo</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p class="">Esta página explica como interpretar os grafos gerados pelo doxygen.</p>
+<p class="">Considere o seguinte exemplo: </p><div class="fragment"><div class="line">/*! Classe oculta por causa da truncagem */</div><div class="line">class Invisible { };</div><div class="line"></div><div class="line">/*! Classe Truncated, relação de herança está oculta */</div><div class="line">class Truncated : public Invisible { };</div><div class="line"></div><div class="line">/* Classe não documentada com os comentários do Doxygen */</div><div class="line">class Undocumented { };</div><div class="line"></div><div class="line">/*! Classe possui que possui uma relação de herança pública */</div><div class="line">class PublicBase : public Truncated { };</div><div class="line"></div><div class="line">/*! Um template de classe */</div><div class="line">template&lt;class T&gt; class Templ { };</div><div class="line"></div><div class="line">/*! Classe possui que possui uma relação de herança protegida  */</div><div class="line">class ProtectedBase { };</div><div class="line"></div><div class="line">/*! Classe possui que possui uma relação de herança privada  */</div><div class="line">class PrivateBase { };</div><div class="line"></div><div class="line">/*! Classe utilizada pela classe Inherited */</div><div class="line">class Used { };</div><div class="line"></div><div class="line">/*! Super classe que herda outras classes */</div><div class="line">class Inherited : public PublicBase,</div><div class="line">                  protected ProtectedBase,</div><div class="line">                  private PrivateBase,</div><div class="line">                  public Undocumented,</div><div class="line">                  public Templ&lt;int&gt;</div><div class="line">{</div><div class="line">  private:</div><div class="line">    Used *m_usedClass;</div><div class="line">};</div></div><!-- fragment --><p> Isto irá gerar o seguinte gráfo:</p>
+<center><div class="image">
+<img src="graph_legend.png" alt=""/>
+</div>
+</center> <p class="">As caixas no grafo acima possuem os seguintes significados: </p>
+<ul>
+<li>
+Uma caixa cinza denota a estrutura ou a classe que geroueste grafo. </li>
+<li>
+Uma caixa com a borda preta denota uma estrutura ou classe documentada. </li>
+<li>
+Uma caixa com a borda cinza denota uma estrutura ou classe não documentada. </li>
+<li>
+Uma caixa com a borda vermelha denota uma estrutura ou classe naqual nem todas as relações são mostradas. Um grafo é truncado quando esse não cabe no espaço especificado. </li>
+</ul>
+<p class="">As setas possuem os seguintes significados: </p>
+<ul>
+<li>
+Uma seta azul escura denota a relação de herança pública entre duas classes. </li>
+<li>
+Uma seta verde escura denota a relação de herança protegida entre duas classes. </li>
+<li>
+Uma seta vermelha escura denota a relação de herança privada entre duas classes. </li>
+<li>
+Uma seta pontilhada púrpura denota a relação de uso e/ou agragação por outra classe/estrutura. A etiqueta da seta denota o nome do(s) campo(s) que representa(m) este apontamento. </li>
+<li>
+Uma seta pontilhada amarela denota a relação de instanciação de uma <em>template</em>. A etiqueta da seta denota os parâmetros de instanciação desta <em>template</em>. </li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
