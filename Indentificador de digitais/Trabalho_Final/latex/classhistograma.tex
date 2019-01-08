@@ -1,0 +1,252 @@
+\hypertarget{classhistograma}{}\section{histograma Class Reference}
+\label{classhistograma}\index{histograma@{histograma}}
+
+
+Classe que implementa o histograma de uma imagem.  
+
+
+
+
+{\ttfamily \#include $<$Histograma.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhistograma_a65a071a25a8ac26d267bcee83ffe5780}{histograma}} ()
+\begin{DoxyCompactList}\small\item\em Construtor Padrão da classe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhistograma_a09adc8454f5839fc87b6e578d122897f}{histograma}} (uint8\+\_\+t $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Construtor da classe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhistograma_a61848912cdb9a1465184999b2f49cf46}{$\sim$histograma}} ()
+\begin{DoxyCompactList}\small\item\em destrutor Padrão da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_a7b1570d6a2feedd66793862d9a140d16}{calcular}} ()
+\begin{DoxyCompactList}\small\item\em Função que calcula o histograma da imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_a8648881cbd8dd1fc701c8acd0022be0a}{calcular\+Masc}} (Mat)
+\begin{DoxyCompactList}\small\item\em Função que calcula o histograma da imagem apenas na area dentro de uma mascara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_a1a0f84171cac20284063c480e4f1e684}{normalizar\+\_\+mostrar}} ()
+\begin{DoxyCompactList}\small\item\em Função que que normaliza e mostra o histograma baseando no maior valor do histograma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_ac15a97ce5bd68648191c0416a7741728}{normalizar}} ()
+\begin{DoxyCompactList}\small\item\em Função que que normaliza o histograma baseando no numero de pixels da imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_a52b6c866e8ec9de71f6527e1cb1037da}{plotar}} (int, int, int, String, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que mostra o histograma em forma de grafico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_a6ab0c9af1a0448ceb27cb6484acfb692}{acumulado\+\_\+masc}} (Mat)
+\begin{DoxyCompactList}\small\item\em Função que faz o histograma acumulado apenas da imagem dentro da mascara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_aed006c903fb0c0403708ef34843b954b}{acumulado}} ()
+\begin{DoxyCompactList}\small\item\em Função que faz o histograma acumulado da imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_a540d01e42181bb08e3f9471d1ba8a79b}{linear}} (int, int, double, double)
+\begin{DoxyCompactList}\small\item\em Função que faz a tranformção linear do histograma. \end{DoxyCompactList}\item 
+vector$<$ float $>$ \mbox{\hyperlink{classhistograma_a79bb95f6bc4ce9f3e12a94419a8ffaab}{getvetor}} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o vetor do histograma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhistograma_a46f65a2b34dc9f966974127cf338dfda}{inverter}} ()
+\begin{DoxyCompactList}\small\item\em Função que inverte x e y do histograma de moda a conseguir a operação inversa do histograma para um equalização. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classhistograma_a218f742ad471f85a5ce049c55a92e2e6}{Otsu\+Threshold}} ()
+\begin{DoxyCompactList}\small\item\em Função que encontra o limiar de threshold em uma imagem em escala de cinza a partir do metodo de Otsu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que implementa o histograma de uma imagem. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classhistograma_a65a071a25a8ac26d267bcee83ffe5780}\label{classhistograma_a65a071a25a8ac26d267bcee83ffe5780}} 
+\index{histograma@{histograma}!histograma@{histograma}}
+\index{histograma@{histograma}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{histograma()}{histograma()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily histograma\+::histograma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor Padrão da classe. 
+
+\mbox{\Hypertarget{classhistograma_a09adc8454f5839fc87b6e578d122897f}\label{classhistograma_a09adc8454f5839fc87b6e578d122897f}} 
+\index{histograma@{histograma}!histograma@{histograma}}
+\index{histograma@{histograma}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{histograma()}{histograma()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily histograma\+::histograma (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{d,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$d} & vetor de pixiels de uma imagem \\
+\hline
+{\em l} & inteiro numero de linhas \\
+\hline
+{\em c} & inteiro numero de colunas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhistograma_a61848912cdb9a1465184999b2f49cf46}\label{classhistograma_a61848912cdb9a1465184999b2f49cf46}} 
+\index{histograma@{histograma}!````~histograma@{$\sim$histograma}}
+\index{````~histograma@{$\sim$histograma}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{$\sim$histograma()}{~histograma()}}
+{\footnotesize\ttfamily histograma\+::$\sim$histograma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+destrutor Padrão da classe. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classhistograma_aed006c903fb0c0403708ef34843b954b}\label{classhistograma_aed006c903fb0c0403708ef34843b954b}} 
+\index{histograma@{histograma}!acumulado@{acumulado}}
+\index{acumulado@{acumulado}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{acumulado()}{acumulado()}}
+{\footnotesize\ttfamily void histograma\+::acumulado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que faz o histograma acumulado da imagem. 
+
+\mbox{\Hypertarget{classhistograma_a6ab0c9af1a0448ceb27cb6484acfb692}\label{classhistograma_a6ab0c9af1a0448ceb27cb6484acfb692}} 
+\index{histograma@{histograma}!acumulado\+\_\+masc@{acumulado\+\_\+masc}}
+\index{acumulado\+\_\+masc@{acumulado\+\_\+masc}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{acumulado\+\_\+masc()}{acumulado\_masc()}}
+{\footnotesize\ttfamily void histograma\+::acumulado\+\_\+masc (\begin{DoxyParamCaption}\item[{Mat}]{masc }\end{DoxyParamCaption})}
+
+
+
+Função que faz o histograma acumulado apenas da imagem dentro da mascara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em masc} & Variavel do tipo M\+AT que deve conter a mascara ser usada na funçao \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhistograma_a7b1570d6a2feedd66793862d9a140d16}\label{classhistograma_a7b1570d6a2feedd66793862d9a140d16}} 
+\index{histograma@{histograma}!calcular@{calcular}}
+\index{calcular@{calcular}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{calcular()}{calcular()}}
+{\footnotesize\ttfamily void histograma\+::calcular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que calcula o histograma da imagem. 
+
+\mbox{\Hypertarget{classhistograma_a8648881cbd8dd1fc701c8acd0022be0a}\label{classhistograma_a8648881cbd8dd1fc701c8acd0022be0a}} 
+\index{histograma@{histograma}!calcular\+Masc@{calcular\+Masc}}
+\index{calcular\+Masc@{calcular\+Masc}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{calcular\+Masc()}{calcularMasc()}}
+{\footnotesize\ttfamily void histograma\+::calcular\+Masc (\begin{DoxyParamCaption}\item[{Mat}]{masc }\end{DoxyParamCaption})}
+
+
+
+Função que calcula o histograma da imagem apenas na area dentro de uma mascara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em masc} & Variavel do tipo mat que deve conter a mascara ser usada na funçao \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhistograma_a79bb95f6bc4ce9f3e12a94419a8ffaab}\label{classhistograma_a79bb95f6bc4ce9f3e12a94419a8ffaab}} 
+\index{histograma@{histograma}!getvetor@{getvetor}}
+\index{getvetor@{getvetor}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{getvetor()}{getvetor()}}
+{\footnotesize\ttfamily vector$<$ float $>$ histograma\+::getvetor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o vetor do histograma. 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma variavel do tipo vector com o histograma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhistograma_a46f65a2b34dc9f966974127cf338dfda}\label{classhistograma_a46f65a2b34dc9f966974127cf338dfda}} 
+\index{histograma@{histograma}!inverter@{inverter}}
+\index{inverter@{inverter}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{inverter()}{inverter()}}
+{\footnotesize\ttfamily void histograma\+::inverter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que inverte x e y do histograma de moda a conseguir a operação inversa do histograma para um equalização. 
+
+\mbox{\Hypertarget{classhistograma_a540d01e42181bb08e3f9471d1ba8a79b}\label{classhistograma_a540d01e42181bb08e3f9471d1ba8a79b}} 
+\index{histograma@{histograma}!linear@{linear}}
+\index{linear@{linear}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{linear()}{linear()}}
+{\footnotesize\ttfamily void histograma\+::linear (\begin{DoxyParamCaption}\item[{int}]{I1,  }\item[{int}]{I2,  }\item[{double}]{K1,  }\item[{double}]{K2 }\end{DoxyParamCaption})}
+
+
+
+Função que faz a tranformção linear do histograma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I1} & Inteiro parametro I1 da transformação linear \\
+\hline
+{\em I2} & Inteiro parametro I2 da transformação linear \\
+\hline
+{\em K1} & Inteiro parametro K1 da transformação linear \\
+\hline
+{\em K2} & Inteiro parametro K2 da transformação linear \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classhistograma_ac15a97ce5bd68648191c0416a7741728}\label{classhistograma_ac15a97ce5bd68648191c0416a7741728}} 
+\index{histograma@{histograma}!normalizar@{normalizar}}
+\index{normalizar@{normalizar}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{normalizar()}{normalizar()}}
+{\footnotesize\ttfamily void histograma\+::normalizar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que que normaliza o histograma baseando no numero de pixels da imagem. 
+
+\mbox{\Hypertarget{classhistograma_a1a0f84171cac20284063c480e4f1e684}\label{classhistograma_a1a0f84171cac20284063c480e4f1e684}} 
+\index{histograma@{histograma}!normalizar\+\_\+mostrar@{normalizar\+\_\+mostrar}}
+\index{normalizar\+\_\+mostrar@{normalizar\+\_\+mostrar}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{normalizar\+\_\+mostrar()}{normalizar\_mostrar()}}
+{\footnotesize\ttfamily void histograma\+::normalizar\+\_\+mostrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que que normaliza e mostra o histograma baseando no maior valor do histograma. 
+
+\mbox{\Hypertarget{classhistograma_a218f742ad471f85a5ce049c55a92e2e6}\label{classhistograma_a218f742ad471f85a5ce049c55a92e2e6}} 
+\index{histograma@{histograma}!Otsu\+Threshold@{Otsu\+Threshold}}
+\index{Otsu\+Threshold@{Otsu\+Threshold}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{Otsu\+Threshold()}{OtsuThreshold()}}
+{\footnotesize\ttfamily int histograma\+::\+Otsu\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que encontra o limiar de threshold em uma imagem em escala de cinza a partir do metodo de Otsu. 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma varivel do tipo int com o limiar calculado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classhistograma_a52b6c866e8ec9de71f6527e1cb1037da}\label{classhistograma_a52b6c866e8ec9de71f6527e1cb1037da}} 
+\index{histograma@{histograma}!plotar@{plotar}}
+\index{plotar@{plotar}!histograma@{histograma}}
+\subsubsection{\texorpdfstring{plotar()}{plotar()}}
+{\footnotesize\ttfamily void histograma\+::plotar (\begin{DoxyParamCaption}\item[{int}]{vermelho,  }\item[{int}]{verde,  }\item[{int}]{azul,  }\item[{String}]{nome,  }\item[{int}]{tam,  }\item[{int}]{move,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função que mostra o histograma em forma de grafico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vermelho} & Inteiro que passa o valor de R em R\+GB que influenciara na cor com que o grafico e plotado \\
+\hline
+{\em verde} & Inteiro que passa o valor de G em R\+GB que influenciara na cor com que o grafico e plotado \\
+\hline
+{\em azul} & Inteiro que passa o valor de B em R\+GB que influenciara na cor com que o grafico e plotado \\
+\hline
+{\em nome} & String que passa o nome da janela que ira conter o gráfico do histogra \\
+\hline
+{\em tam} & Inteiro que passa o tamanho da janela que ira conter o gráfico do histograma \\
+\hline
+{\em move} & posicao x na tela da janela do histograma \\
+\hline
+{\em y} & posicao y na tela da janela do histograma \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_histograma_8h}{Histograma.\+h}}\item 
+src/Histograma.\+cpp\end{DoxyCompactItemize}

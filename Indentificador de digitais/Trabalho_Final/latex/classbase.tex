@@ -1,0 +1,128 @@
+\hypertarget{classbase}{}\section{base Class Reference}
+\label{classbase}\index{base@{base}}
+
+
+Classe que implementa um objeto que é a base de dados que guarda informações sobre diversas impressões digitais.  
+
+
+
+
+{\ttfamily \#include $<$Base\+\_\+\+Dados.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase_a3b0362be8b58605e4975b969dd8131a4}{base}} ()
+\begin{DoxyCompactList}\small\item\em Construtor Padrão da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_aff56c74591768308bb3cfbcde7901926}{set\+\_\+dedo}} (\mbox{\hyperlink{classdedo}{dedo}})
+\begin{DoxyCompactList}\small\item\em Set the dedo object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_a32a63a8bc58d7b21224f3a1caf59ed02}{comparar}} (\mbox{\hyperlink{classdedo}{dedo}})
+\begin{DoxyCompactList}\small\item\em Função que realiza a comparação de uma impressão digital com as que existem na base de dados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_a4d2dd9457866115cc595e612b340c04f}{resultado}} ()
+\begin{DoxyCompactList}\small\item\em Calcula o resultado da comparação e define o resultado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbase_a8d7e8978652ae605ab038286cfeb24fb}{get\+\_\+quantidade}} ()
+\begin{DoxyCompactList}\small\item\em Método que pega a quantidade de objetos na base de dados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase_a4de5d06607b9f92a158d8dd88d9775fc}{mostrar\+\_\+resultados}} ()
+\begin{DoxyCompactList}\small\item\em Função que exibe o resultado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que implementa um objeto que é a base de dados que guarda informações sobre diversas impressões digitais. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbase_a3b0362be8b58605e4975b969dd8131a4}\label{classbase_a3b0362be8b58605e4975b969dd8131a4}} 
+\index{base@{base}!base@{base}}
+\index{base@{base}!base@{base}}
+\subsubsection{\texorpdfstring{base()}{base()}}
+{\footnotesize\ttfamily base\+::base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor Padrão da classe. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbase_a32a63a8bc58d7b21224f3a1caf59ed02}\label{classbase_a32a63a8bc58d7b21224f3a1caf59ed02}} 
+\index{base@{base}!comparar@{comparar}}
+\index{comparar@{comparar}!base@{base}}
+\subsubsection{\texorpdfstring{comparar()}{comparar()}}
+{\footnotesize\ttfamily void base\+::comparar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdedo}{dedo}}}]{d }\end{DoxyParamCaption})}
+
+
+
+Função que realiza a comparação de uma impressão digital com as que existem na base de dados. 
+
+Realiza a comparação dos descritores de um dedo com os outros da base de dados. Para realizar essa comparação é usado o O\+RB, ele calcula uma distancia entre uma imagem e outra, que servira de parametro para classificação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Objeto do tipo dedo.\\
+\hline
+{\em Recebe} & esse objeto que sera comparado como um parâmetro do método. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbase_a8d7e8978652ae605ab038286cfeb24fb}\label{classbase_a8d7e8978652ae605ab038286cfeb24fb}} 
+\index{base@{base}!get\+\_\+quantidade@{get\+\_\+quantidade}}
+\index{get\+\_\+quantidade@{get\+\_\+quantidade}!base@{base}}
+\subsubsection{\texorpdfstring{get\+\_\+quantidade()}{get\_quantidade()}}
+{\footnotesize\ttfamily int base\+::get\+\_\+quantidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que pega a quantidade de objetos na base de dados. 
+
+Retorna o número de objetos no banco de dados.
+
+\begin{DoxyReturn}{Returns}
+Retorna um inteiro correspondente ao resultado.
+
+Inteiro com o número de objetos. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_a4de5d06607b9f92a158d8dd88d9775fc}\label{classbase_a4de5d06607b9f92a158d8dd88d9775fc}} 
+\index{base@{base}!mostrar\+\_\+resultados@{mostrar\+\_\+resultados}}
+\index{mostrar\+\_\+resultados@{mostrar\+\_\+resultados}!base@{base}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+resultados()}{mostrar\_resultados()}}
+{\footnotesize\ttfamily void base\+::mostrar\+\_\+resultados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que exibe o resultado. 
+
+\mbox{\Hypertarget{classbase_a4d2dd9457866115cc595e612b340c04f}\label{classbase_a4d2dd9457866115cc595e612b340c04f}} 
+\index{base@{base}!resultado@{resultado}}
+\index{resultado@{resultado}!base@{base}}
+\subsubsection{\texorpdfstring{resultado()}{resultado()}}
+{\footnotesize\ttfamily void base\+::resultado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcula o resultado da comparação e define o resultado. 
+
+Função que encontra a menor distância encontrada no método comparar.\mbox{\Hypertarget{classbase_aff56c74591768308bb3cfbcde7901926}\label{classbase_aff56c74591768308bb3cfbcde7901926}} 
+\index{base@{base}!set\+\_\+dedo@{set\+\_\+dedo}}
+\index{set\+\_\+dedo@{set\+\_\+dedo}!base@{base}}
+\subsubsection{\texorpdfstring{set\+\_\+dedo()}{set\_dedo()}}
+{\footnotesize\ttfamily void base\+::set\+\_\+dedo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdedo}{dedo}}}]{d }\end{DoxyParamCaption})}
+
+
+
+Set the dedo object. 
+
+Adiciona na base de dados um novo objeto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Objeto do tipo dedo.\\
+\hline
+{\em Recebe} & esse objeto como parâmetro da função \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_base___dados_8h}{Base\+\_\+\+Dados.\+h}}\item 
+src/\mbox{\hyperlink{_base___dados_8cpp}{Base\+\_\+\+Dados.\+cpp}}\end{DoxyCompactItemize}

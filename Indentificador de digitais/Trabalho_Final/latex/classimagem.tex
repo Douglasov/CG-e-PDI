@@ -1,0 +1,582 @@
+\hypertarget{classimagem}{}\section{imagem Class Reference}
+\label{classimagem}\index{imagem@{imagem}}
+
+
+Classe que implementa uma imagem e as possiveis operações feitas nela.  
+
+
+
+
+{\ttfamily \#include $<$Imagem.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimagem_a8b9254383530c94a0cf7528eff9a4485}{imagem}} ()
+\begin{DoxyCompactList}\small\item\em Construtor Padrão da classe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classimagem_a924786f40b91371f6b401e41eb98d924}{imagem}} (String)
+\begin{DoxyCompactList}\small\item\em Construtor Padrão da classe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classimagem_adefef7f11bc59fe5ab28ce3d19fb1823}{$\sim$imagem}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor Padrão da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a89544423c69c48cbe7320dd59a807aeb}{transformacao\+\_\+linear}} (int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que aplica a transformacao linear na imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_af5316f59a80bdc2a69d933af2b1f6451}{transformacao\+\_\+linear\+\_\+mascara}} (int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que faz uma mascara para separar a imagem em 2 objetos ou classes de pixeis dentro da imagem utilizando a transformação linear. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classimagem_ae87ae55ee13fbfe25158eed459af857f}{getlinhas}} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna as linhas da imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a2429e4cd88c01ee01550bcc2ea5dd709}{set}} (String)
+\begin{DoxyCompactList}\small\item\em Função que troca a imagem contida na classe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classimagem_a561c2829106e5df33e62b4cb3c9ceac1}{getcolunas}} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna as colunas da imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_aea8dbfce37d53ab5482831ae9feb9997}{aumenta\+\_\+imagem}} ()
+\begin{DoxyCompactList}\small\item\em Função que aumenta a imagem ou seja aumenta os pixels da imagem. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classimagem_a3648601eb35468c0d0d3ec911491f393}{maior\+\_\+vet}} (vector$<$ float $>$ v)
+\begin{DoxyCompactList}\small\item\em Função que encontra o maior numero de um vetor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a4be2827cf5fe60ee27c8acf74a2aa806}{moda}} (int)
+\begin{DoxyCompactList}\small\item\em Função que aplica o filtro de moda na imagem. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classimagem_a4280dd018d44d3d84f4d627f937d3d96}{temimagem}} ()
+\begin{DoxyCompactList}\small\item\em Função que verifica se tem imagem carrega na classe. \end{DoxyCompactList}\item 
+Mat \mbox{\hyperlink{classimagem_ae86c0f56ad56fb4cc9f0a9020fc856d4}{get\+Imagem}} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna a imagem contina na classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_ac17d8fd15a1929bab5db225542dd71a6}{filtrobilateral}} ()
+\begin{DoxyCompactList}\small\item\em Função que aplica o filtro bilateral na imagem com o kernel de ordem 3. \end{DoxyCompactList}\item 
+Mat \mbox{\hyperlink{classimagem_a0acb8bdd2e3305c22fe0f859c7bb7bb4}{get\+Mascara}} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna a mascara da imagem contina na classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_af4ba91ae6fe7753c8b28b8da5580f957}{imagem\+\_\+skelet}} ()
+\begin{DoxyCompactList}\small\item\em Função que aplica a esqueletização na imagem e armazana na classe separadamente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a1b1f0b60fedab7a7551a01d566318c8c}{equalizar\+\_\+clahe}} (double)
+\begin{DoxyCompactList}\small\item\em Função que faz a equalização local da imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a9dc03632a97e3511e8df39b643945374}{plotar}} (String, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que plota imagem contida na imagem na classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a02367972deb183901af1fa24a0f746e9}{plotar\+\_\+mascara}} (String, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que plota a mascara da imagem contida na imagem na classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_aafd1bd7c1570477c12ddbd76d14c68c9}{transformacao\+\_\+aculmulado}} (\mbox{\hyperlink{classhistograma}{histograma}}, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que faz a equalização por histograma acumulado da imagem a partir de um histograma mostrando o grafico do histograma acumulado do histograma que foi usado para fazer a equalização. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_adf6ca234d55595b5518e189afd24349c}{casamento\+\_\+de\+\_\+histograma}} (\mbox{\hyperlink{classhistograma}{histograma}}, \mbox{\hyperlink{classhistograma}{histograma}}, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que faz o casamento do histograma em uma imagem a partir do histograma de duas imagem mostrando o grafico do histograma do primero histograma acumulado e do segundo histograma acumulado e invertido ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_aec30a377384b60c26e1595a7505a1d13}{transformacao\+\_\+mascara}} (int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que aplica a transformação linear apenas na parte da imagem, contida dentro da amascara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a42b09a684f856cd47aa638f2878a2c74}{filtro\+\_\+canny}} (int, int, int)
+\begin{DoxyCompactList}\small\item\em Função que aplica o filtro de bordas de canny na imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a58e307bbc753f8c5fb9ba3d434a30617}{filtro\+\_\+mediana}} ()
+\begin{DoxyCompactList}\small\item\em Função que aplica o filtro de mediana na imagem com o kernel de ordem 3 na imagem. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classimagem_a9132e1ac177b315c0d322ed6a88a94d0}\label{classimagem_a9132e1ac177b315c0d322ed6a88a94d0}} 
+void \mbox{\hyperlink{classimagem_a9132e1ac177b315c0d322ed6a88a94d0}{Filtro\+\_\+gabor}} ()
+\begin{DoxyCompactList}\small\item\em Função que aplica o filtro de gabor no angulo de 30, kernel de ordem 3 e frequencia 2 na imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a7ece85b1d08fdf8090ef0609526580ab}{erosao}} ()
+\begin{DoxyCompactList}\small\item\em Função que aplica uma erosão da imagem com kernel de ordem 3 retangular ou seja de vizinhança 8. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_ada5ccf2e3115538ae83f81fc8196518f}{dilatacao}} ()
+\begin{DoxyCompactList}\small\item\em Função que aplica uma dilatação da imagem com kernel de ordem 3 retangular ou seja de vizinhança 8. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a1a3b8c5e2b35c7864a23e105e98b66f0}{limiarizacaolocal}} ()
+\begin{DoxyCompactList}\small\item\em Função que aplica limiarização local um kernel de 40. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_ae80cd028fa41af6d5c58f6125109aac0}{limiarizacaolocalcommascara}} (double max\+Value, int threshold\+Type, int block\+Size, double C)
+\begin{DoxyCompactList}\small\item\em Função que aplica limiarização local apenas na região da imagem dentro da mascara. \end{DoxyCompactList}\item 
+Mat \mbox{\hyperlink{classimagem_a68615db6ed7ab0639ba5bc0c77e9552e}{get\+\_\+esqueleto}} ()
+\begin{DoxyCompactList}\small\item\em Função que retorna o esqueleto da imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a37b3c4152a098a5e76195d4600e60ed7}{thinning\+Iteration}} (Mat \&im, int iter)
+\begin{DoxyCompactList}\small\item\em Função utlizada para encontrar o centro das formas para esqueletização e diminuir sua grosura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a9e822c786769377a6eadea8d73437e7a}{skeletizar}} (Mat \&im)
+\begin{DoxyCompactList}\small\item\em Função para skeletizar a imagem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a091cd2f5b8ef956115782b7931e69952}{plotar\+\_\+skelet}} (String nome, int tam, int move, int y)
+\begin{DoxyCompactList}\small\item\em Função que mostra o esqueleto da imagem contida na classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimagem_a19ce10f29593d2bb6b7206da49ffb7db}{set\+Imagem}} (String file)
+\begin{DoxyCompactList}\small\item\em Função que modifica a imagem da classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que implementa uma imagem e as possiveis operações feitas nela. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classimagem_a8b9254383530c94a0cf7528eff9a4485}\label{classimagem_a8b9254383530c94a0cf7528eff9a4485}} 
+\index{imagem@{imagem}!imagem@{imagem}}
+\index{imagem@{imagem}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{imagem()}{imagem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily imagem\+::imagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor Padrão da classe. 
+
+\mbox{\Hypertarget{classimagem_a924786f40b91371f6b401e41eb98d924}\label{classimagem_a924786f40b91371f6b401e41eb98d924}} 
+\index{imagem@{imagem}!imagem@{imagem}}
+\index{imagem@{imagem}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{imagem()}{imagem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily imagem\+::imagem (\begin{DoxyParamCaption}\item[{String}]{file }\end{DoxyParamCaption})}
+
+
+
+Construtor Padrão da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & String que deve conter o caminho que contem uma imagem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_adefef7f11bc59fe5ab28ce3d19fb1823}\label{classimagem_adefef7f11bc59fe5ab28ce3d19fb1823}} 
+\index{imagem@{imagem}!````~imagem@{$\sim$imagem}}
+\index{````~imagem@{$\sim$imagem}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{$\sim$imagem()}{~imagem()}}
+{\footnotesize\ttfamily imagem\+::$\sim$imagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destrutor Padrão da classe. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classimagem_aea8dbfce37d53ab5482831ae9feb9997}\label{classimagem_aea8dbfce37d53ab5482831ae9feb9997}} 
+\index{imagem@{imagem}!aumenta\+\_\+imagem@{aumenta\+\_\+imagem}}
+\index{aumenta\+\_\+imagem@{aumenta\+\_\+imagem}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{aumenta\+\_\+imagem()}{aumenta\_imagem()}}
+{\footnotesize\ttfamily void imagem\+::aumenta\+\_\+imagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que aumenta a imagem ou seja aumenta os pixels da imagem. 
+
+\mbox{\Hypertarget{classimagem_adf6ca234d55595b5518e189afd24349c}\label{classimagem_adf6ca234d55595b5518e189afd24349c}} 
+\index{imagem@{imagem}!casamento\+\_\+de\+\_\+histograma@{casamento\+\_\+de\+\_\+histograma}}
+\index{casamento\+\_\+de\+\_\+histograma@{casamento\+\_\+de\+\_\+histograma}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{casamento\+\_\+de\+\_\+histograma()}{casamento\_de\_histograma()}}
+{\footnotesize\ttfamily void imagem\+::casamento\+\_\+de\+\_\+histograma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhistograma}{histograma}}}]{h1,  }\item[{\mbox{\hyperlink{classhistograma}{histograma}}}]{h2,  }\item[{int}]{tam,  }\item[{int}]{move,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função que faz o casamento do histograma em uma imagem a partir do histograma de duas imagem mostrando o grafico do histograma do primero histograma acumulado e do segundo histograma acumulado e invertido ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tam} & Inteiro que passa o tamanho da janela que ira conter o gráfico do histogra \\
+\hline
+{\em move} & posicao x na tela da janela do histograma \\
+\hline
+{\em y} & posicao y na tela da janela do histograma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_ada5ccf2e3115538ae83f81fc8196518f}\label{classimagem_ada5ccf2e3115538ae83f81fc8196518f}} 
+\index{imagem@{imagem}!dilatacao@{dilatacao}}
+\index{dilatacao@{dilatacao}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{dilatacao()}{dilatacao()}}
+{\footnotesize\ttfamily void imagem\+::dilatacao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que aplica uma dilatação da imagem com kernel de ordem 3 retangular ou seja de vizinhança 8. 
+
+\mbox{\Hypertarget{classimagem_a1b1f0b60fedab7a7551a01d566318c8c}\label{classimagem_a1b1f0b60fedab7a7551a01d566318c8c}} 
+\index{imagem@{imagem}!equalizar\+\_\+clahe@{equalizar\+\_\+clahe}}
+\index{equalizar\+\_\+clahe@{equalizar\+\_\+clahe}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{equalizar\+\_\+clahe()}{equalizar\_clahe()}}
+{\footnotesize\ttfamily void imagem\+::equalizar\+\_\+clahe (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+
+
+Função que faz a equalização local da imagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Variavel que defini a amplifcação de contraste \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a7ece85b1d08fdf8090ef0609526580ab}\label{classimagem_a7ece85b1d08fdf8090ef0609526580ab}} 
+\index{imagem@{imagem}!erosao@{erosao}}
+\index{erosao@{erosao}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{erosao()}{erosao()}}
+{\footnotesize\ttfamily void imagem\+::erosao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que aplica uma erosão da imagem com kernel de ordem 3 retangular ou seja de vizinhança 8. 
+
+\mbox{\Hypertarget{classimagem_a42b09a684f856cd47aa638f2878a2c74}\label{classimagem_a42b09a684f856cd47aa638f2878a2c74}} 
+\index{imagem@{imagem}!filtro\+\_\+canny@{filtro\+\_\+canny}}
+\index{filtro\+\_\+canny@{filtro\+\_\+canny}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{filtro\+\_\+canny()}{filtro\_canny()}}
+{\footnotesize\ttfamily void imagem\+::filtro\+\_\+canny (\begin{DoxyParamCaption}\item[{int}]{max,  }\item[{int}]{raio,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Função que aplica o filtro de bordas de canny na imagem. 
+
+\mbox{\Hypertarget{classimagem_a58e307bbc753f8c5fb9ba3d434a30617}\label{classimagem_a58e307bbc753f8c5fb9ba3d434a30617}} 
+\index{imagem@{imagem}!filtro\+\_\+mediana@{filtro\+\_\+mediana}}
+\index{filtro\+\_\+mediana@{filtro\+\_\+mediana}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{filtro\+\_\+mediana()}{filtro\_mediana()}}
+{\footnotesize\ttfamily void imagem\+::filtro\+\_\+mediana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que aplica o filtro de mediana na imagem com o kernel de ordem 3 na imagem. 
+
+\mbox{\Hypertarget{classimagem_ac17d8fd15a1929bab5db225542dd71a6}\label{classimagem_ac17d8fd15a1929bab5db225542dd71a6}} 
+\index{imagem@{imagem}!filtrobilateral@{filtrobilateral}}
+\index{filtrobilateral@{filtrobilateral}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{filtrobilateral()}{filtrobilateral()}}
+{\footnotesize\ttfamily void imagem\+::filtrobilateral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que aplica o filtro bilateral na imagem com o kernel de ordem 3. 
+
+\mbox{\Hypertarget{classimagem_a68615db6ed7ab0639ba5bc0c77e9552e}\label{classimagem_a68615db6ed7ab0639ba5bc0c77e9552e}} 
+\index{imagem@{imagem}!get\+\_\+esqueleto@{get\+\_\+esqueleto}}
+\index{get\+\_\+esqueleto@{get\+\_\+esqueleto}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{get\+\_\+esqueleto()}{get\_esqueleto()}}
+{\footnotesize\ttfamily Mat imagem\+::get\+\_\+esqueleto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna o esqueleto da imagem. 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma Variavel Mat com a imagem esqueletizada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimagem_a561c2829106e5df33e62b4cb3c9ceac1}\label{classimagem_a561c2829106e5df33e62b4cb3c9ceac1}} 
+\index{imagem@{imagem}!getcolunas@{getcolunas}}
+\index{getcolunas@{getcolunas}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{getcolunas()}{getcolunas()}}
+{\footnotesize\ttfamily int imagem\+::getcolunas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna as colunas da imagem. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um inteiro com as colunas da imagem 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimagem_ae86c0f56ad56fb4cc9f0a9020fc856d4}\label{classimagem_ae86c0f56ad56fb4cc9f0a9020fc856d4}} 
+\index{imagem@{imagem}!get\+Imagem@{get\+Imagem}}
+\index{get\+Imagem@{get\+Imagem}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{get\+Imagem()}{getImagem()}}
+{\footnotesize\ttfamily Mat imagem\+::get\+Imagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna a imagem contina na classe. 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma variavel do tipo Mat que contem a imagem contida na classe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimagem_ae87ae55ee13fbfe25158eed459af857f}\label{classimagem_ae87ae55ee13fbfe25158eed459af857f}} 
+\index{imagem@{imagem}!getlinhas@{getlinhas}}
+\index{getlinhas@{getlinhas}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{getlinhas()}{getlinhas()}}
+{\footnotesize\ttfamily int imagem\+::getlinhas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna as linhas da imagem. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um inteiro com as linhas da imagem 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimagem_a0acb8bdd2e3305c22fe0f859c7bb7bb4}\label{classimagem_a0acb8bdd2e3305c22fe0f859c7bb7bb4}} 
+\index{imagem@{imagem}!get\+Mascara@{get\+Mascara}}
+\index{get\+Mascara@{get\+Mascara}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{get\+Mascara()}{getMascara()}}
+{\footnotesize\ttfamily Mat imagem\+::get\+Mascara (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que retorna a mascara da imagem contina na classe. 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma variavel do tipo Mat que contem a mascara da imagem contida na classe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimagem_af4ba91ae6fe7753c8b28b8da5580f957}\label{classimagem_af4ba91ae6fe7753c8b28b8da5580f957}} 
+\index{imagem@{imagem}!imagem\+\_\+skelet@{imagem\+\_\+skelet}}
+\index{imagem\+\_\+skelet@{imagem\+\_\+skelet}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{imagem\+\_\+skelet()}{imagem\_skelet()}}
+{\footnotesize\ttfamily void imagem\+::imagem\+\_\+skelet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que aplica a esqueletização na imagem e armazana na classe separadamente. 
+
+\mbox{\Hypertarget{classimagem_a1a3b8c5e2b35c7864a23e105e98b66f0}\label{classimagem_a1a3b8c5e2b35c7864a23e105e98b66f0}} 
+\index{imagem@{imagem}!limiarizacaolocal@{limiarizacaolocal}}
+\index{limiarizacaolocal@{limiarizacaolocal}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{limiarizacaolocal()}{limiarizacaolocal()}}
+{\footnotesize\ttfamily void imagem\+::limiarizacaolocal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que aplica limiarização local um kernel de 40. 
+
+\mbox{\Hypertarget{classimagem_ae80cd028fa41af6d5c58f6125109aac0}\label{classimagem_ae80cd028fa41af6d5c58f6125109aac0}} 
+\index{imagem@{imagem}!limiarizacaolocalcommascara@{limiarizacaolocalcommascara}}
+\index{limiarizacaolocalcommascara@{limiarizacaolocalcommascara}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{limiarizacaolocalcommascara()}{limiarizacaolocalcommascara()}}
+{\footnotesize\ttfamily void imagem\+::limiarizacaolocalcommascara (\begin{DoxyParamCaption}\item[{double}]{max\+Value,  }\item[{int}]{threshold\+Type,  }\item[{int}]{block\+Size,  }\item[{double}]{C }\end{DoxyParamCaption})}
+
+
+
+Função que aplica limiarização local apenas na região da imagem dentro da mascara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Value} & inteiro que significa valor maximo que um pixel tera na binarizacao \\
+\hline
+{\em threshold\+Type} & inteiro que é a opção do tipo do threshold que se deseja executar \\
+\hline
+{\em block\+Size} & inteiro determina a ordem do kernel que sera aplicado na imagem ou seja o tamanho das areas que sera feito o threshold local \\
+\hline
+{\em C} & valor subtraido do valor do limiar do threshhold obtido ou seja um ajuste fino \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a3648601eb35468c0d0d3ec911491f393}\label{classimagem_a3648601eb35468c0d0d3ec911491f393}} 
+\index{imagem@{imagem}!maior\+\_\+vet@{maior\+\_\+vet}}
+\index{maior\+\_\+vet@{maior\+\_\+vet}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{maior\+\_\+vet()}{maior\_vet()}}
+{\footnotesize\ttfamily int imagem\+::maior\+\_\+vet (\begin{DoxyParamCaption}\item[{vector$<$ float $>$}]{v }\end{DoxyParamCaption})}
+
+
+
+Função que encontra o maior numero de um vetor. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um inteiro com maior numero do vetor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimagem_a4be2827cf5fe60ee27c8acf74a2aa806}\label{classimagem_a4be2827cf5fe60ee27c8acf74a2aa806}} 
+\index{imagem@{imagem}!moda@{moda}}
+\index{moda@{moda}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{moda()}{moda()}}
+{\footnotesize\ttfamily void imagem\+::moda (\begin{DoxyParamCaption}\item[{int}]{kernel\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Função que aplica o filtro de moda na imagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kernel\+\_\+size} & Inteiro que determina a ordem do kernel que se deseja aplicar o filtro de moda na imagem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a9dc03632a97e3511e8df39b643945374}\label{classimagem_a9dc03632a97e3511e8df39b643945374}} 
+\index{imagem@{imagem}!plotar@{plotar}}
+\index{plotar@{plotar}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{plotar()}{plotar()}}
+{\footnotesize\ttfamily void imagem\+::plotar (\begin{DoxyParamCaption}\item[{String}]{nome,  }\item[{int}]{tam,  }\item[{int}]{move,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função que plota imagem contida na imagem na classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & String que passa o nome da janela que ira conter a imagem \\
+\hline
+{\em tam} & Inteiro que passa o tamanho da janela que ira conter a imagem \\
+\hline
+{\em move} & posicao x na tela da janela da imagem \\
+\hline
+{\em y} & posicao y na tela da janela da imagem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a02367972deb183901af1fa24a0f746e9}\label{classimagem_a02367972deb183901af1fa24a0f746e9}} 
+\index{imagem@{imagem}!plotar\+\_\+mascara@{plotar\+\_\+mascara}}
+\index{plotar\+\_\+mascara@{plotar\+\_\+mascara}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{plotar\+\_\+mascara()}{plotar\_mascara()}}
+{\footnotesize\ttfamily void imagem\+::plotar\+\_\+mascara (\begin{DoxyParamCaption}\item[{String}]{nome,  }\item[{int}]{tam,  }\item[{int}]{move,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função que plota a mascara da imagem contida na imagem na classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & String que passa o nome da janela que ira conter a mascara \\
+\hline
+{\em tam} & Inteiro que passa o tamanho da janela que ira conter a mascara \\
+\hline
+{\em move} & posicao x na tela da janela da mascara \\
+\hline
+{\em y} & posicao y na tela da janela da mascara \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a091cd2f5b8ef956115782b7931e69952}\label{classimagem_a091cd2f5b8ef956115782b7931e69952}} 
+\index{imagem@{imagem}!plotar\+\_\+skelet@{plotar\+\_\+skelet}}
+\index{plotar\+\_\+skelet@{plotar\+\_\+skelet}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{plotar\+\_\+skelet()}{plotar\_skelet()}}
+{\footnotesize\ttfamily void imagem\+::plotar\+\_\+skelet (\begin{DoxyParamCaption}\item[{String}]{nome,  }\item[{int}]{tam,  }\item[{int}]{move,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função que mostra o esqueleto da imagem contida na classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & String que passa o nome da janela que ira conter a imagem skeletizada \\
+\hline
+{\em tam} & Inteiro que passa o tamanho da janela que ira conter a imagem skeletizada \\
+\hline
+{\em move} & posicao x na tela da janela da imagem skeletizada \\
+\hline
+{\em y} & posicao y na tela da janela da imagem skeletizada\\
+\hline
+\end{DoxyParams}
+~\newline
+ \mbox{\Hypertarget{classimagem_a2429e4cd88c01ee01550bcc2ea5dd709}\label{classimagem_a2429e4cd88c01ee01550bcc2ea5dd709}} 
+\index{imagem@{imagem}!set@{set}}
+\index{set@{set}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void imagem\+::set (\begin{DoxyParamCaption}\item[{String}]{file }\end{DoxyParamCaption})}
+
+
+
+Função que troca a imagem contida na classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & String que deve conter o caminho que contem uma imagem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a19ce10f29593d2bb6b7206da49ffb7db}\label{classimagem_a19ce10f29593d2bb6b7206da49ffb7db}} 
+\index{imagem@{imagem}!set\+Imagem@{set\+Imagem}}
+\index{set\+Imagem@{set\+Imagem}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{set\+Imagem()}{setImagem()}}
+{\footnotesize\ttfamily void imagem\+::set\+Imagem (\begin{DoxyParamCaption}\item[{String}]{file }\end{DoxyParamCaption})}
+
+
+
+Função que modifica a imagem da classe. 
+
+~\newline
+ \mbox{\Hypertarget{classimagem_a9e822c786769377a6eadea8d73437e7a}\label{classimagem_a9e822c786769377a6eadea8d73437e7a}} 
+\index{imagem@{imagem}!skeletizar@{skeletizar}}
+\index{skeletizar@{skeletizar}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{skeletizar()}{skeletizar()}}
+{\footnotesize\ttfamily void imagem\+::skeletizar (\begin{DoxyParamCaption}\item[{Mat \&}]{im }\end{DoxyParamCaption})}
+
+
+
+Função para skeletizar a imagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im} & uma varivel do tipo Mat que contem uma imagem binaria \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a4280dd018d44d3d84f4d627f937d3d96}\label{classimagem_a4280dd018d44d3d84f4d627f937d3d96}} 
+\index{imagem@{imagem}!temimagem@{temimagem}}
+\index{temimagem@{temimagem}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{temimagem()}{temimagem()}}
+{\footnotesize\ttfamily bool imagem\+::temimagem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que verifica se tem imagem carrega na classe. 
+
+\begin{DoxyReturn}{Returns}
+Retorna umavariavel bool que retorna true caso tenha uma imagem e false caso não tenha 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimagem_a37b3c4152a098a5e76195d4600e60ed7}\label{classimagem_a37b3c4152a098a5e76195d4600e60ed7}} 
+\index{imagem@{imagem}!thinning\+Iteration@{thinning\+Iteration}}
+\index{thinning\+Iteration@{thinning\+Iteration}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{thinning\+Iteration()}{thinningIteration()}}
+{\footnotesize\ttfamily void imagem\+::thinning\+Iteration (\begin{DoxyParamCaption}\item[{Mat \&}]{im,  }\item[{int}]{iter }\end{DoxyParamCaption})}
+
+
+
+Função utlizada para encontrar o centro das formas para esqueletização e diminuir sua grosura. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im} & a imagem binaria a ser avaliada e alterada \\
+\hline
+{\em iter} & define se a interação sera a interação sera 0=par ou 1=impar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_aafd1bd7c1570477c12ddbd76d14c68c9}\label{classimagem_aafd1bd7c1570477c12ddbd76d14c68c9}} 
+\index{imagem@{imagem}!transformacao\+\_\+aculmulado@{transformacao\+\_\+aculmulado}}
+\index{transformacao\+\_\+aculmulado@{transformacao\+\_\+aculmulado}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{transformacao\+\_\+aculmulado()}{transformacao\_aculmulado()}}
+{\footnotesize\ttfamily void imagem\+::transformacao\+\_\+aculmulado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classhistograma}{histograma}}}]{acumulado,  }\item[{int}]{tam,  }\item[{int}]{move,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função que faz a equalização por histograma acumulado da imagem a partir de um histograma mostrando o grafico do histograma acumulado do histograma que foi usado para fazer a equalização. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tam} & Inteiro que passa o tamanho da janela que ira conter o gráfico do histograma \\
+\hline
+{\em move} & posicao x na tela da janela do histograma \\
+\hline
+{\em y} & posicao y na tela da janela do histograma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_a89544423c69c48cbe7320dd59a807aeb}\label{classimagem_a89544423c69c48cbe7320dd59a807aeb}} 
+\index{imagem@{imagem}!transformacao\+\_\+linear@{transformacao\+\_\+linear}}
+\index{transformacao\+\_\+linear@{transformacao\+\_\+linear}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{transformacao\+\_\+linear()}{transformacao\_linear()}}
+{\footnotesize\ttfamily void imagem\+::transformacao\+\_\+linear (\begin{DoxyParamCaption}\item[{int}]{I1,  }\item[{int}]{I2,  }\item[{int}]{K1,  }\item[{int}]{K2 }\end{DoxyParamCaption})}
+
+
+
+Função que aplica a transformacao linear na imagem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I1} & Inteiro parametro I1 da transformação linear \\
+\hline
+{\em I2} & Inteiro parametro I2 da transformação linear \\
+\hline
+{\em K1} & Inteiro parametro K1 da transformação linear \\
+\hline
+{\em K2} & Inteiro parametro K2 da transformação linear \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_af5316f59a80bdc2a69d933af2b1f6451}\label{classimagem_af5316f59a80bdc2a69d933af2b1f6451}} 
+\index{imagem@{imagem}!transformacao\+\_\+linear\+\_\+mascara@{transformacao\+\_\+linear\+\_\+mascara}}
+\index{transformacao\+\_\+linear\+\_\+mascara@{transformacao\+\_\+linear\+\_\+mascara}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{transformacao\+\_\+linear\+\_\+mascara()}{transformacao\_linear\_mascara()}}
+{\footnotesize\ttfamily void imagem\+::transformacao\+\_\+linear\+\_\+mascara (\begin{DoxyParamCaption}\item[{int}]{I1,  }\item[{int}]{I2,  }\item[{int}]{K1,  }\item[{int}]{K2 }\end{DoxyParamCaption})}
+
+
+
+Função que faz uma mascara para separar a imagem em 2 objetos ou classes de pixeis dentro da imagem utilizando a transformação linear. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I1} & Inteiro parametro I1 da transformação linear \\
+\hline
+{\em I2} & Inteiro parametro I2 da transformação linear \\
+\hline
+{\em K1} & Inteiro parametro K1 da transformação linear \\
+\hline
+{\em K2} & Inteiro parametro K2 da transformação linear \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimagem_aec30a377384b60c26e1595a7505a1d13}\label{classimagem_aec30a377384b60c26e1595a7505a1d13}} 
+\index{imagem@{imagem}!transformacao\+\_\+mascara@{transformacao\+\_\+mascara}}
+\index{transformacao\+\_\+mascara@{transformacao\+\_\+mascara}!imagem@{imagem}}
+\subsubsection{\texorpdfstring{transformacao\+\_\+mascara()}{transformacao\_mascara()}}
+{\footnotesize\ttfamily void imagem\+::transformacao\+\_\+mascara (\begin{DoxyParamCaption}\item[{int}]{I1,  }\item[{int}]{I2,  }\item[{int}]{K1,  }\item[{int}]{K2 }\end{DoxyParamCaption})}
+
+
+
+Função que aplica a transformação linear apenas na parte da imagem, contida dentro da amascara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I1} & Inteiro parametro I1 da transformação linear \\
+\hline
+{\em I2} & Inteiro parametro I2 da transformação linear \\
+\hline
+{\em K1} & Inteiro parametro K1 da transformação linear \\
+\hline
+{\em K2} & Inteiro parametro K2 da transformação linear \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_imagem_8h}{Imagem.\+h}}\item 
+src/Imagem.\+cpp\end{DoxyCompactItemize}

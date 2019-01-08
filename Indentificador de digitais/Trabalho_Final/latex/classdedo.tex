@@ -1,0 +1,200 @@
+\hypertarget{classdedo}{}\section{dedo Class Reference}
+\label{classdedo}\index{dedo@{dedo}}
+
+
+Classe que implementa o objeto dedo, objeto esse que possui a imagem do dedo, o nome do dono do dedo e outros parâmeros.  
+
+
+
+
+{\ttfamily \#include $<$Dedo.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdedo_a7099ad8c3d3a2a21685c25c2ccc95765}{dedo}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe dedo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdedo_a07bf77eb028fadc8a1e84f56c9982b2d}{dedo}} (\mbox{\hyperlink{classimagem}{imagem}} im)
+\begin{DoxyCompactList}\small\item\em Construtor com parâmetro da classe dedo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdedo_a6ef2d247e9e0710c9d55777cd5b5b929}{set}} (\mbox{\hyperlink{classimagem}{imagem}})
+\begin{DoxyCompactList}\small\item\em Função que adiciona uma imagem para um opbjeto dedo. \end{DoxyCompactList}\item 
+Mat \mbox{\hyperlink{classdedo_adc4d5e0f4d079cc9062cf1eb467d23b6}{get\+\_\+descritor}} ()
+\begin{DoxyCompactList}\small\item\em Pega o descritor de um objeto dedo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdedo_a89112db7f0de9d4c3349b7766db45104}{caracterizar}} ()
+\begin{DoxyCompactList}\small\item\em Computa os pontos chaves e gera os descritores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdedo_acadef8b9556703a74d277907c119b265}{mostrar\+\_\+dedo}} ()
+\begin{DoxyCompactList}\small\item\em Exibe a imagem referente ao objeto dedo. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classdedo_a3703ecb795fd327b28d9fda72de3a702}{get\+\_\+nome}} ()
+\begin{DoxyCompactList}\small\item\em Método que retorna o nome do individuo dono do dedo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdedo_a40f9f9b467d878f95691665d8c18d005}{set\+\_\+nome}} (string)
+\begin{DoxyCompactList}\small\item\em Adiociona a um objeto o nome do individuo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdedo_a098e4c93dfd50b699abac9a415327f2a}{mostrar\+\_\+nome}} ()
+\begin{DoxyCompactList}\small\item\em Método que exibe o nome do individuo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdedo_a4418d126f687ab73c41bb3768f6c0d34}{detectar\+\_\+corner}} ()
+\begin{DoxyCompactList}\small\item\em Método que detecta as minúcias de uma impressão digital. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classdedo_a712670af9bc0a9c755b6f67de9494064}{get\+\_\+limiar}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o parametro limiar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdedo_a329de08f6e37adea96e36b9ee2c490de}{limpar\+\_\+dedo}} ()
+\begin{DoxyCompactList}\small\item\em Limpa alguns parametros do objeto dedo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que implementa o objeto dedo, objeto esse que possui a imagem do dedo, o nome do dono do dedo e outros parâmeros. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdedo_a7099ad8c3d3a2a21685c25c2ccc95765}\label{classdedo_a7099ad8c3d3a2a21685c25c2ccc95765}} 
+\index{dedo@{dedo}!dedo@{dedo}}
+\index{dedo@{dedo}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{dedo()}{dedo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily dedo\+::dedo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor padrão da classe dedo. 
+
+\mbox{\Hypertarget{classdedo_a07bf77eb028fadc8a1e84f56c9982b2d}\label{classdedo_a07bf77eb028fadc8a1e84f56c9982b2d}} 
+\index{dedo@{dedo}!dedo@{dedo}}
+\index{dedo@{dedo}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{dedo()}{dedo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily dedo\+::dedo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classimagem}{imagem}}}]{im }\end{DoxyParamCaption})}
+
+
+
+Construtor com parâmetro da classe dedo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im} & Parâmetro referente a um objeto imagem. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdedo_a89112db7f0de9d4c3349b7766db45104}\label{classdedo_a89112db7f0de9d4c3349b7766db45104}} 
+\index{dedo@{dedo}!caracterizar@{caracterizar}}
+\index{caracterizar@{caracterizar}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{caracterizar()}{caracterizar()}}
+{\footnotesize\ttfamily void dedo\+::caracterizar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computa os pontos chaves e gera os descritores. 
+
+Com os ponto chave detectados são computados os descritores, cada imagem possui um descritor que sera usado para comparar com outros descritores.\mbox{\Hypertarget{classdedo_a4418d126f687ab73c41bb3768f6c0d34}\label{classdedo_a4418d126f687ab73c41bb3768f6c0d34}} 
+\index{dedo@{dedo}!detectar\+\_\+corner@{detectar\+\_\+corner}}
+\index{detectar\+\_\+corner@{detectar\+\_\+corner}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{detectar\+\_\+corner()}{detectar\_corner()}}
+{\footnotesize\ttfamily void dedo\+::detectar\+\_\+corner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que detecta as minúcias de uma impressão digital. 
+
+Para detectar os pontos chave é usado o Harris Corner que detecta a variação de intensidade dos pixeis para definir se existe ou não um cruzamento.\mbox{\Hypertarget{classdedo_adc4d5e0f4d079cc9062cf1eb467d23b6}\label{classdedo_adc4d5e0f4d079cc9062cf1eb467d23b6}} 
+\index{dedo@{dedo}!get\+\_\+descritor@{get\+\_\+descritor}}
+\index{get\+\_\+descritor@{get\+\_\+descritor}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{get\+\_\+descritor()}{get\_descritor()}}
+{\footnotesize\ttfamily Mat dedo\+::get\+\_\+descritor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o descritor de um objeto dedo. 
+
+\begin{DoxyReturn}{Returns}
+Mat Retorna a matriz que possui esse descritor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdedo_a712670af9bc0a9c755b6f67de9494064}\label{classdedo_a712670af9bc0a9c755b6f67de9494064}} 
+\index{dedo@{dedo}!get\+\_\+limiar@{get\+\_\+limiar}}
+\index{get\+\_\+limiar@{get\+\_\+limiar}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{get\+\_\+limiar()}{get\_limiar()}}
+{\footnotesize\ttfamily int dedo\+::get\+\_\+limiar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna o parametro limiar. 
+
+\begin{DoxyReturn}{Returns}
+Valor que pode ser usado como limiar para o resultado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdedo_a3703ecb795fd327b28d9fda72de3a702}\label{classdedo_a3703ecb795fd327b28d9fda72de3a702}} 
+\index{dedo@{dedo}!get\+\_\+nome@{get\+\_\+nome}}
+\index{get\+\_\+nome@{get\+\_\+nome}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{get\+\_\+nome()}{get\_nome()}}
+{\footnotesize\ttfamily string dedo\+::get\+\_\+nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que retorna o nome do individuo dono do dedo. 
+
+\begin{DoxyReturn}{Returns}
+Nome do individuo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdedo_a329de08f6e37adea96e36b9ee2c490de}\label{classdedo_a329de08f6e37adea96e36b9ee2c490de}} 
+\index{dedo@{dedo}!limpar\+\_\+dedo@{limpar\+\_\+dedo}}
+\index{limpar\+\_\+dedo@{limpar\+\_\+dedo}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{limpar\+\_\+dedo()}{limpar\_dedo()}}
+{\footnotesize\ttfamily void dedo\+::limpar\+\_\+dedo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Limpa alguns parametros do objeto dedo. 
+
+\mbox{\Hypertarget{classdedo_acadef8b9556703a74d277907c119b265}\label{classdedo_acadef8b9556703a74d277907c119b265}} 
+\index{dedo@{dedo}!mostrar\+\_\+dedo@{mostrar\+\_\+dedo}}
+\index{mostrar\+\_\+dedo@{mostrar\+\_\+dedo}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+dedo()}{mostrar\_dedo()}}
+{\footnotesize\ttfamily void dedo\+::mostrar\+\_\+dedo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe a imagem referente ao objeto dedo. 
+
+\mbox{\Hypertarget{classdedo_a098e4c93dfd50b699abac9a415327f2a}\label{classdedo_a098e4c93dfd50b699abac9a415327f2a}} 
+\index{dedo@{dedo}!mostrar\+\_\+nome@{mostrar\+\_\+nome}}
+\index{mostrar\+\_\+nome@{mostrar\+\_\+nome}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+nome()}{mostrar\_nome()}}
+{\footnotesize\ttfamily void dedo\+::mostrar\+\_\+nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que exibe o nome do individuo. 
+
+\mbox{\Hypertarget{classdedo_a6ef2d247e9e0710c9d55777cd5b5b929}\label{classdedo_a6ef2d247e9e0710c9d55777cd5b5b929}} 
+\index{dedo@{dedo}!set@{set}}
+\index{set@{set}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void dedo\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classimagem}{imagem}}}]{im }\end{DoxyParamCaption})}
+
+
+
+Função que adiciona uma imagem para um opbjeto dedo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im} & Objeto referente a uma imagem. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdedo_a40f9f9b467d878f95691665d8c18d005}\label{classdedo_a40f9f9b467d878f95691665d8c18d005}} 
+\index{dedo@{dedo}!set\+\_\+nome@{set\+\_\+nome}}
+\index{set\+\_\+nome@{set\+\_\+nome}!dedo@{dedo}}
+\subsubsection{\texorpdfstring{set\+\_\+nome()}{set\_nome()}}
+{\footnotesize\ttfamily void dedo\+::set\+\_\+nome (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})}
+
+
+
+Adiociona a um objeto o nome do individuo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & string com o um nome. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_dedo_8h}{Dedo.\+h}}\item 
+src/\mbox{\hyperlink{_dedo_8cpp}{Dedo.\+cpp}}\end{DoxyCompactItemize}

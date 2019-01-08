@@ -1,0 +1,88 @@
+\hypertarget{index_sec_intro}{}\section{Introdução}\label{index_sec_intro}
+O projeto tem o objetivo de identificar uma impressão digital em uma base de dados que acompanha o trabalho. Nesta documentação seram detalhadas as informações necessárias para compilar, executar e usar o programa.
+
+Para facilitar o entendimento a explicação do programa serão divididas em duas etapas. A primeira referente ao processamento de uma foto de um dedo e a segunda referente a classificação. ~\newline
+ \hypertarget{index_sec_install}{}\section{Compilando, Executando e Usando o Programa}\label{index_sec_install}
+\hypertarget{index_ssec1}{}\subsection{Compilando e Executando}\label{index_ssec1}
+Para Compilar e executar o código é necessario entrar na pasta build, e executar os seguintes comandos.
+
+
+\begin{DoxyItemize}
+\item cmake ..
+\item make
+\item ./\+Digital\+\_\+\+Pattern
+\end{DoxyItemize}\hypertarget{index_ssec2}{}\subsection{Menu}\label{index_ssec2}
+A imagem Abaixo mostra o menu inicial do programa.
+
+
+
+A primeira opção possibilita buscar no banco de dados uma digital com o mesmo padrão de uma imagem desejada. Para facilitar foram carregadas algumas opções de imagem para pesquisar no banco. A imagem abaixo mostra essas opções, e o resultado de uma consulta.
+
+
+
+A segunda opção do menu executa a etapa de tratamento de uma imagem. Essa imagem tratada, já acompanha o projeto. Todas as etapas do processamento são exibidas na tela em forma de imagens.
+
+A ultima opção do menu tem o objetivo de fechar o programa.
+
+As imagens referentes a base de dados, esta no diretório src/base, e as demais fotos estão no diretório src/img.\hypertarget{index_sec_summary}{}\section{Resumo}\label{index_sec_summary}
+\hypertarget{index_ssec3}{}\subsection{Processamento de imagens}\label{index_ssec3}
+Nesta etapa é reslizado o tratamento de uma imagem, para que seja possível realizar a indentificação dos padrões da digital. O fluxograma seguinte exemplifica as etapas.
+
+
+
+As imagens seguintes ilustram as etapas mostradas no fluxograma.
+
+
+\begin{DoxyItemize}
+\item A primeira imagem mostra a foto do dedo em escala de cinza.
+\end{DoxyItemize}
+
+
+
+
+\begin{DoxyItemize}
+\item A segunda mostra a imagem da mascara usada seguimentar o dedo. Threshold. ~\newline
+ 
+\item A terceira imagem mostra a equalização da imagem, realizada para destacar as linhas do deto.
+\end{DoxyItemize}
+
+
+
+
+\begin{DoxyItemize}
+\item A proxima imagem mostra a imagem binaria.
+\end{DoxyItemize}
+
+
+
+-\/E a última mostra o esqueleto da imagem.
+
+\hypertarget{index_ssec4}{}\subsection{Identificação da Digital}\label{index_ssec4}
+Esta etapa mostra a parte da detecção das caracteristicas e comparação com outras impressões digitais. O fluxograma abaixo mostra as etapas do processo.
+
+
+
+
+\begin{DoxyItemize}
+\item A imagem abaixo mostra as Minúcias detectadas usando o Harris Corner.
+\end{DoxyItemize}
+
+
+
+
+\begin{DoxyItemize}
+\item A Proxima imagem mostra o casamento de duas imagens, realizando as comparações das caracteristicas de cada uma.
+\end{DoxyItemize}
+
+
+
+\begin{DoxyAuthor}{Author}
+Douglas Venâncio 
+
+Filipe Pena 
+
+Marco Vinha 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Junho de 2018 
+\end{DoxyDate}
